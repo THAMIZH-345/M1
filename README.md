@@ -1,5 +1,6 @@
-name:tamilselvan R
-reg no:212224060275
+NAME: TAMILSELVAN R
+
+REG NO: 212224060275
 # EX-01-DatatypOperators
 ## AIM:
 Write a C program to read 3 characters one by one and print the characters in a reverse order.
@@ -15,16 +16,31 @@ Write a C program to read 3 characters one by one and print the characters in a 
 #include <stdio.h>
 
 int main() {
-    char a, b, c;
-    scanf("%c %c %c", &a, &b, &c);
-    printf("%c %c %c\n", c, b, a);
+    
+    char ch1, ch2, ch3;
+
+    
+    printf("Enter first character: ");
+    scanf(" %c", &ch1); 
+    printf("Enter second character: ");
+    scanf(" %c", &ch2);
+
+    printf("Enter third character: ");
+    scanf(" %c", &ch3);
+
+    
+    printf("Characters in reverse order: %c %c %c\n", ch3, ch2, ch1);
+
+   
     return 0;
 }
+
 ```
 
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/ad8a7b86-e70e-4d24-9392-85b0b6c8e5fb)
 
+
+![image](https://github.com/user-attachments/assets/c2282fc4-e35f-42c9-9acc-581c2e88a9af)
 
 
 
@@ -63,20 +79,31 @@ Write a C program to read A values and check whether A is positive number or not
 #include <stdio.h>
 
 int main() {
+  
     int A;
+
+   
+    printf("Enter a number: ");
     scanf("%d", &A);
+
+   
     if (A > 0) {
-        printf("Positive number\n");
+        
+        printf("A is a positive number.\n");
     } else {
-        printf("Not a positive number\n");
+        
+        printf("A is not a positive number.\n");
     }
+
+ 
     return 0;
 }
+
 ```
 
 # OUTPUT:
-![image](https://github.com/user-attachments/assets/a1474065-4939-41db-907d-b40785a364ba)
 
+![image](https://github.com/user-attachments/assets/01eb1b27-b655-4876-bede-adabff4d6c28)
 
 
 
@@ -134,9 +161,10 @@ int main() {
 ```
 
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/104ea41b-cb22-4a52-8c52-897caf193f78)
 
 
+
+![image](https://github.com/user-attachments/assets/de26aaa1-525f-471e-9987-085bd28c6fba)
 
 
 
@@ -170,19 +198,29 @@ Write a C program to check whether the input value is equal to 1 using simple if
 
 int main() {
     int value;
+
+  
+    printf("Enter a number: ");
     scanf("%d", &value);
+
+    
     if (value == 1) {
-        printf("Input value is equal to 1\n");
+       
+        printf("The input value is equal to 1.\n");
     } else {
-        printf("Input value is not equal to 1\n");
+        
+        printf("The input value is not equal to 1.\n");
     }
+
+   
     return 0;
 }
+
 ```
 
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/ea9930b3-8868-46a2-b0ea-4b000425454e)
 
+![image](https://github.com/user-attachments/assets/3f87ee99-780b-4cd8-9077-f18b3ec05533)
 
 
 
@@ -220,35 +258,52 @@ c.	Else if percentage >= 36: Print “Division = Pass”
 #include <stdio.h>
 
 int main() {
+   
     int m1, m2, m3;
     float tot, per;
-    
-    scanf("%d %d %d", &m1, &m2, &m3);
-    
+
+    printf("Enter marks for subject 1: ");
+    scanf("%d", &m1);
+    printf("Enter marks for subject 2: ");
+    scanf("%d", &m2);
+    printf("Enter marks for subject 3: ");
+    scanf("%d", &m3);
+
+   
     tot = m1 + m2 + m3;
+
+    
     per = tot / 3;
-    
-    printf("Total = %.0f\n", tot);
-    printf("Percentage = %.2f\n", per);
-    
+
+    printf("Total Marks = %.2f\n", tot);
+    printf("Percentage = %.2f%%\n", per);
+
+  
     if (m1 >= 40 && m2 >= 40 && m3 >= 40) {
+      
         if (per >= 60) {
             printf("Division = First\n");
         } else if (per >= 48) {
             printf("Division = Second\n");
         } else if (per >= 36) {
             printf("Division = Pass\n");
+        } else {
+            printf("Division = Fail\n");
         }
     } else {
+   
         printf("Division = Fail\n");
     }
+
     
     return 0;
 }
+
 ```
 
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/54387c81-816d-418a-9392-8ac11d1e239c)
+
+![image](https://github.com/user-attachments/assets/ecd54b3d-d569-44eb-9c91-68e708e0f22d)
 
 
 ## RESULT:
